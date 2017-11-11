@@ -12,5 +12,5 @@ Minimal java agent example.
 
 ### Usage
 To use the instrumentation within a java application, you have to add the jar file by jvm parameter *-javaagent*, e.g.
--javaagent:<fullPathToExampleAgentJarFile>
+-javaagent:fullPathToExampleAgentJarFile
 
