@@ -1,25 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'eclipse'
-apply plugin: 'maven-publish'
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            groupId 'de.ragedev'
-			artifactId 'java-agent-hello-world'
-			version '0.0.5'
-		
-            from components.java
-        }
-    }
-    repositories {
-        mavenLocal()
-    }
-    
-}
 
 jar {
-  	manifest {
-      attributes 'Premain-Class': 'ExampleAgent' 
-    }
+  manifest {
+   attributes 'Premain-Class': 'ExampleAgent' 
+  }
 }
